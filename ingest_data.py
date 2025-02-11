@@ -27,7 +27,7 @@ def generate_knowledge_base():
     for i, chunk in enumerate(chunk_texts):
         embedding = embedding_model.encode(chunk).tolist()
 
-        vector_store.upsert(vectors=[(f"chunk_{i}", embedding, {"source": f"chunk_{i}"})])
+        vector_store.upsert(vectors=[(f"chunk_{i}", embedding, {"source": f"chunk_{i}", "text": chunk})])
 
         print(f"✅ Successfully uploaded chunk {i+1}/{len(chunk_texts)}")
         time.sleep(1)
