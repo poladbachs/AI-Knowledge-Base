@@ -11,19 +11,17 @@ class QueryRequest(BaseModel):
 @app.post("/query")
 def query_knowledge(request: QueryRequest):
     query_text = request.query
-
     query_embedding = embedding_model.encode(query_text).tolist()
-
-    search_results = vector_store.query(vector=query_embedding, top_k=3, include_metadata=True)
+    
+    search_results = vector_store.query(vector=query_embedding, top_k=5, include_metadata=True)
 
     matches = search_results.get("matches", [])
     if not matches:
         return {"answer": "No relevant knowledge found."}
 
-    best_match_text = matches[0]["id"]
+    best_match = max(matches, key=lambda x: x.get("score", 0))
     
-    best_match_metadata = matches[0].get("metadata", {})
-    actual_sentence = best_match_metadata.get("text", "No text available")
+    actual_sentence = best_match.get("metadata", {}).get("text", "No text available")
 
     return {"answer": actual_sentence}
 
