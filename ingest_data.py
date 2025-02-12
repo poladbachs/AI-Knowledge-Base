@@ -7,17 +7,34 @@ from langchain.schema import Document
 from vector_db import vector_store, embedding_model
 
 spitch_knowledge = [
-    "Spitch AI is a company that develops AI-powered speech recognition and voice authentication technology.",
-    "Spitch AI specializes in voice biometrics, speech analytics, and AI-driven customer interactions.",
-    "Spitch AI provides solutions that replace passwords with secure voice authentication.",
-    "Spitch AI supports multiple languages and integrates with existing business platforms.",
-    "Spitch AI ensures GDPR and ISO 27001 compliance in voice data processing.",
-    "Spitch AI's biometric authentication prevents fraud and unauthorized access.",
+    # ✅ Core Company Information
+    "Spitch AI is a leading provider of AI-driven speech recognition, voice biometrics, and natural language processing (NLP) solutions.",
+    "Spitch AI specializes in automating and optimizing voice-based interactions for businesses across various industries.",
+    "Spitch AI enables enterprises to improve customer experience through real-time speech analytics and AI-powered automation.",
 
-    "Spitch AI enables voice authentication for secure transactions and fraud detection.",
-    "Spitch AI automates customer support with AI-driven speech recognition.",
-    "Spitch AI provides voice-based identity verification for secure public services.",
-    "Spitch AI improves call routing and customer self-service through AI-powered automation.",
+    # ✅ Technologies & AI Capabilities
+    "Spitch AI uses advanced natural language processing (NLP) and deep learning to accurately process and understand speech.",
+    "Spitch AI's voice biometrics technology ensures secure authentication by analyzing unique vocal characteristics.",
+    "Spitch AI leverages machine learning algorithms to enhance speech-to-text accuracy and sentiment analysis.",
+    "Spitch AI provides automatic speech recognition (ASR) technology for multilingual voice-based applications.",
+
+    # ✅ Security & Compliance
+    "Spitch AI ensures full compliance with GDPR and ISO 27001 for secure voice data processing and user authentication.",
+    "Spitch AI's biometric authentication prevents fraud by verifying users through their unique voice patterns.",
+    "Spitch AI's speech encryption and secure voice authentication help businesses meet regulatory compliance standards.",
+
+    # ✅ Industry Use Cases
+    "Banks use Spitch AI to enable voice authentication for secure transactions and fraud prevention.",
+    "Call centers leverage Spitch AI for AI-driven customer support automation and real-time speech analytics.",
+    "Government agencies use Spitch AI for voice-based identity verification and secure citizen services.",
+    "Telecom companies implement Spitch AI to improve call routing and automate customer self-service.",
+    "Healthcare providers use Spitch AI for voice-enabled patient authentication and medical data security.",
+    "Insurance firms integrate Spitch AI for automated claims processing and fraud detection.",
+    
+    # ✅ Competitive Edge & Unique Features
+    "Spitch AI offers fully customizable AI models, allowing businesses to tailor voice recognition to their specific needs.",
+    "Unlike generic AI solutions, Spitch AI provides deep industry expertise and custom NLP models for voice applications.",
+    "Spitch AI enables omnichannel integration, allowing businesses to deploy AI-powered voice technology across multiple platforms."
 ]
 
 def generate_knowledge_base():
