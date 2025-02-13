@@ -1,0 +1,10 @@
+streamlit
+fastapi
+uvicorn
+requests
+pinecone-client
+sentence-transformers
+langchain
+langchain_pinecone
+python-dotenv
+pydantic
