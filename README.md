@@ -59,21 +59,13 @@ This project is a **company-specific AI knowledge base**, making it **highly rel
 
 ✅ **Tailored to Spitch AI** – Unlike generic AI knowledge bases, this is built **specifically** for Spitch AI.
 
-✅ **Company Branding & Customization** – The UI and knowledge align with **Spitch AI’s identity & services**.
+✅ **Company Branding & Customization** – The knowledge aligns with **Spitch AI’s identity & services**.
 
 ✅ **Future-Proof & Scalable** – Knowledge can be expanded easily **without changing the architecture**.
 
 ✅ **Replaces Traditional FAQs** – Eliminates static FAQs with a **dynamic, AI-powered knowledge system**.
 
 ✅ **Attracts Potential Clients** – Enhances Spitch AI’s ability to showcase its **AI capabilities to new customers**.
-
----
-
-## 📩 Future Enhancements
-🔹 **Multilingual Support** – Extend to support multiple languages.
-🔹 **More Industry Insights** – Expand use cases with real-world Spitch AI applications.
-🔹 **Improved Query Understanding** – Enhance NLP models for even better answer matching.
-🔹 **API for External Integration** – Allow businesses to integrate Spitch AI knowledge via API.
 
 ---
 
